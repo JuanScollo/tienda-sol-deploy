@@ -1,0 +1,224 @@
+.form-section,
+.payment-section,
+.summary-section {
+  background-color: var(--color-white);
+  border-radius: 14px;
+  padding: 40px;
+  box-shadow: 0 25px 45px rgba(31, 28, 25, 0.05);
+}
+
+.form-section h2,
+.payment-section h2,
+.summary-section h2 {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.form-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.form-row > * {
+  flex: 1 1 200px;
+  min-width: 0;
+}
+
+.form-field-half {
+  flex: 1;
+}
+
+.checkout-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--checkout-gray);
+  font-weight: 600;
+}
+
+.checkout-input,
+.checkout-select {
+  width: 100%;
+  height: 52px;
+  border-radius: 10px;
+  border: 1px solid #dad3cb;
+  background-color: var(--color-white);
+  padding: 0 18px;
+  font-size: 16px;
+  color: var(--checkout-text);
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.checkout-select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--color-blue-dark) 50%),
+    linear-gradient(135deg, var(--color-blue-dark) 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) calc(50% - 3px),
+    calc(100% - 12px) calc(50% - 3px);
+  background-size: 6px 6px;
+  background-repeat: no-repeat;
+}
+
+.checkout-input:focus,
+.checkout-select:focus {
+  outline: none;
+  border-color: var(--color-blue-dark);
+  box-shadow: 0 0 0 3px rgba(18, 52, 88, 0.15);
+}
+
+.checkout-input-error {
+  border-color: #e74c3c;
+}
+
+.checkout-input-error:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.15);
+}
+
+.checkout-field-error {
+  font-size: 12px;
+  color: #e74c3c;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.form-checkbox {
+  margin: 30px 0;
+}
+
+.checkout-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: var(--checkout-text);
+  cursor: pointer;
+}
+
+.checkout-checkbox input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--color-blue-dark);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.checkout-button {
+  border: none;
+  border-radius: 10px;
+  padding: 14px 36px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: var(--color-blue-primary);
+  color: var(--color-white);
+  box-shadow: 0 4px 12px rgba(11, 121, 255, 0.3);
+}
+
+.checkout-button:hover:not(:disabled) {
+  background-color: #0966d6;
+  box-shadow: 0 6px 16px rgba(11, 121, 255, 0.4);
+  transform: translateY(-1px);
+}
+
+.checkout-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.checkout-button.secondary {
+  background-color: transparent;
+  color: #8c8680;
+  border: 2px solid #8c8680;
+  box-shadow: none;
+}
+
+.checkout-button.secondary:hover:not(:disabled) {
+  background-color: rgba(140, 134, 128, 0.1);
+  color: #6b6560;
+  border-color: #6b6560;
+  box-shadow: none;
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.payment-option {
+  border: 1px solid #e2dbd3;
+  border-radius: 10px;
+  padding: 18px 24px;
+  background-color: var(--checkout-card-bg);
+}
+
+.checkout-radio {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: var(--checkout-text);
+  cursor: pointer;
+}
+
+.checkout-radio.small {
+  font-size: 14px;
+}
+
+.checkout-radio input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-blue-dark);
+}
+
+.checkout-radio.checked {
+  color: var(--color-blue-dark);
+}
+
+.card-details {
+  margin-top: 18px;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #d3d0cb;
+}
+
+.card-type-selection {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}

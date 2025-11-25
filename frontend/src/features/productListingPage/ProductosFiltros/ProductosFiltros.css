@@ -1,0 +1,119 @@
+.filtros-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: "Inter", system-ui, sans-serif;
+  color: var(--color-black);
+}
+
+.filtros-titulo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-blue-dark);
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+
+.filtros-seccion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filtros-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.filtros-precio {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.filtros-precio input {
+  width: 100%;
+  height: 40px;
+  padding: 0 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background-color: var(--color-white);
+  font-size: 0.95rem;
+  color: var(--color-black);
+  transition: all 0.2s ease-out;
+}
+
+.filtros-precio input:focus {
+  outline: none;
+  border-color: var(--color-blue-dark);
+  box-shadow: 0 0 0 2px rgba(18, 52, 88, 0.15);
+}
+
+.filtros-precio-separador {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.filtros-checkbox-label {
+  font-size: 0.9rem;
+  color: var(--color-black);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color .2s ease, transform .15s ease;
+}
+
+.filtros-checkbox-label:hover {
+  color: var(--color-blue-dark);
+  transform: translateX(2px);
+}
+
+.ver-mas-btn-filtro {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-blue-dark);
+  cursor: pointer;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.ver-mas-btn-filtro:hover {
+  color: var(--color-blue-dark-hover);
+}
+
+
+.filtros-botones {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.btn-buscar {
+  background: var(--color-blue-dark);
+  color: var(--color-white);
+  border: 1px solid var(--color-blue-dark);
+  transition: all .2s ease;
+  padding: 6px 0;
+}
+
+.btn-buscar:hover {
+  background: #1d4e82;
+  transform: translateY(-1px);
+}
+
+.btn-limpiar {
+  background: transparent;
+  color: var(--color-blue-dark);
+  border: 1px solid var(--color-blue-dark);
+  transition: all .2s ease;
+}
+
+.btn-limpiar:hover {
+  background: rgba(18, 52, 88, .08);
+  color: var(--color-blue-dark);
+  transform: translateY(-1px);
+}

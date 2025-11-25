@@ -1,0 +1,71 @@
+body {
+    background-color: var(--color-beige-light);
+    padding : 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner-area {
+  background-image: url(../../../public/images/ropaGenerica.png);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  margin-top: 70px;
+}
+
+.banner-text {
+  background: rgba(255, 255, 255, 0.7); /* blanco translúcido */
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 30px;                /* separación desde el borde inferior */
+  text-align: center;
+  backdrop-filter: blur(5px);         /* opcional: desenfoca el fondo */
+}
+
+.banner-text h2 {
+  color: #333;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* ==== BOTÓN "VER MÁS" PREMIUM ==== */
+
+.ver-mas-btn {
+  display: block;
+  margin: 40px auto;
+  padding: 12px 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-white);
+  background-color: var(--color-blue-primary);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  letter-spacing: 0.6px;
+  box-shadow: 0 4px 12px rgba(3, 3, 3, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+
+.ver-mas-btn:hover{
+  background-color: #0966d6;
+  box-shadow: 0 6px 16px rgba(11, 121, 255, 0.4);
+  transform: translateY(-1px);
+} 
+
+.ver-mas-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+

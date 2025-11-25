@@ -1,0 +1,31 @@
+:root {
+  --color-beige-light: #F1EFEC;
+  --color-beige-medium: #D4C9BE;
+  --color-blue-dark: #123458;
+  --color-blue-primary: #0b79ff;
+  --color-black: #030303;
+  --color-white: #FFFFFF;
+  --color-primary-hover: #0966d6;
+
+  --color-btn-primary-cyan: #007bff;
+  --color-btn-primary-blue: #202227;
+  --color-btn-secondary-blue: #2563eb;
+
+
+  --color-verde-disponible: #10b981;
+  --color-naranja-bajo: #f59e0b;
+  --color-rojo-no-disponible: #ef4444;
+
+  --color-detail-btn-primary-border: #cbd5e0;
+
+  --color-detail-btn-hover: #f7fafc;
+  --color-detail-btn-hover-border: #a0aec0;
+
+  --color-detail-btn-disable: #cbd5e0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

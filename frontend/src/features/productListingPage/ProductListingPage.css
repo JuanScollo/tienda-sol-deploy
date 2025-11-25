@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.ProductListingPage {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 92px;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.products-main {
+  padding: 24px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  background-color: var(--color-white);
+}
+
+.parte-arriba {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.parte-arriba h1 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-black);
+  margin: 0;
+}
+
+.filters-sidebar {
+  padding: 30px 20px;
+  border-right: 1px solid #e5e7eb;
+  background-color: rgba(212, 201, 190, 0.35);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: box-shadow .2s ease;
+}
+
+.filters-sidebar:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+}
+
+.products-content {
+  min-width: 0;
+}
+
+.sort-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-section label {
+  font-size: 0.95rem;
+  color: #6b7280;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.custom-select {
+  appearance: none;
+  height: 38px;
+  min-width: 180px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background-color: #fff;
+  padding: 0 2.25rem 0 .75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-black);
+  cursor: pointer;
+  transition: border-color .15s ease, box-shadow .15s ease;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+}
+
+.custom-select:hover {
+  border-color: var(--color-sand);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+}
+
+.custom-select:focus {
+  outline: none;
+  border-color: var(--color-blue-dark);
+  box-shadow: 0 0 0 2px rgba(18, 52, 88, 0.15);
+}
+
+.custom-select option {
+  color: var(--color-black);
+  background-color: #fff;
+}
+
+@media (max-width: 1024px){
+  .products-main { 
+    grid-template-columns: 1fr; 
+    padding: 20px;
+  }
+  .filters-sidebar { order: 2; }
+  .products-content { order: 1; }
+}
+
+@media (max-width: 640px){
+  .parte-arriba h1{
+    font-size: 1.1rem;
+    letter-spacing: .06em;
+  }
+}
