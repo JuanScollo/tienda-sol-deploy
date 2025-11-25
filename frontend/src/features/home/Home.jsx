@@ -4,8 +4,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getProductos, getCategorias } from '../../services/api.js';
 import Grid from "../../components/grid/grid.jsx";
-import { CircularProgress } from '@mui/material';
-
+import  ProductCardSkeleton  from '../../components/productoCard/Skeleton/ProductCardSkeleton.jsx'
 
 const Home = ({ actualizarCarrito }) => {
 
@@ -39,9 +38,12 @@ const Home = ({ actualizarCarrito }) => {
                 </div>
             </div>
 
-            {!productos.length ? <div className="spinner">
-                <CircularProgress />
-            </div> :
+            {!productos.length ? 
+                    <div className="skeleton-grid">
+                        {Array(9).fill(0).map((_, index) => (
+                            <ProductCardSkeleton key={index} />
+                        ))}
+                    </div> :
                 <div>
                     <div className="productos-section">
                         <div className="productos-header">
