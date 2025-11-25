@@ -341,4 +341,8 @@
   .checkout-btn {
     padding: 14px 36px;
   }
+
+  .item-image-link {
+    margin-right: 0; 
+  }
 }
